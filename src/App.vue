@@ -5,26 +5,32 @@
         <v-row align="center" justify="center">
           <v-col>
             <v-card
-              class="mx-auto"
+              class="mx-auto over-hidden"
               max-width="400"
               height="600"
             >
               <v-container class="grey lighten-5">
-                <v-col cols="12" sm="6">
+                <v-col cols="12">
                   <v-text-field
-                    label="Regular"
+                    label="Hexadecimal"
                     single-line
                   ></v-text-field>
                 </v-col>
-                <v-col cols="12" sm="6">
+                <v-col cols="12">
                   <v-text-field
-                    label="Regular"
+                    label="Decimal"
                     single-line
                   ></v-text-field>
                 </v-col>
-                <v-col cols="12" sm="6">
+                <v-col cols="12">
                   <v-text-field
-                    label="Regular"
+                    label="Octal"
+                    single-line
+                  ></v-text-field>
+                </v-col>
+                <v-col cols="12">
+                  <v-text-field
+                    label="Binary"
                     single-line
                   ></v-text-field>
                 </v-col>
@@ -114,3 +120,9 @@ export default {
   }),
 };
 </script>
+
+<style lang="scss" scoped>
+.over-hidden {
+  overflow: hidden;
+}
+</style>
